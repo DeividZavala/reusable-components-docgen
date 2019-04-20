@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const HelloWorld = ({message}) => (
+/** Primer componente documentado */
+const HelloWorld = ({message = 'Perro'}) => (
     <div>
        Hello {message}
     </div>
 );
 
 HelloWorld.propTypes = {
-    messaga: PropTypes.string
+    /** Texto que se mostrará en el componente */
+    message: PropTypes.string
 };
 
 export default HelloWorld;

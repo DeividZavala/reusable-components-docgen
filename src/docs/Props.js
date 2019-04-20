@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Props = ({props}) => {
+    console.log(props);
     return (
         <table className="props">
             <thead>
@@ -22,7 +23,7 @@ const Props = ({props}) => {
                             <td>{props[key].description}</td>
                             <td>{props[key].type.name}</td>
                             <td>{props[key].defaultValue && props[key].defaultValue.value}</td>
-                            <td>{props[key].required && "X"}</td>
+                            <td>{props[key].required && "✔︎"}</td>
                         </tr>
                     );
                 })
